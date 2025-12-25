@@ -1,4 +1,4 @@
-<img width="1749" height="847" alt="image" src="https://github.com/user-attachments/assets/7de93a50-2d37-4e06-a75b-6da8ef4117e0" /># Advanced-Data-Warehouse-Modernization-Using-Databricks
+# Advanced-Data-Warehouse-Modernization-Using-Databricks
 
 ### About
 
