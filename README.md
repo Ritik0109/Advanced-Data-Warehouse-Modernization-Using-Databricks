@@ -1,16 +1,16 @@
 # Advanced-Data-Warehouse-Modernization-Using-Databricks
 
 ### About
-
+FinanceCo Global is a financial services firm supporting regulatory reporting and enterprise analytics. To support growth and compliance needs, the company required a modern, scalable data platform to replace its legacy on-premises warehouse.
 
 ### Challenge
-
+The existing SQL Server–based warehouse relied on complex SSIS workflows and manual Databricks deployments, leading to poor scalability, slow month-end reporting, high maintenance costs, and weak governance over sensitive financial data.
 
 ### Solution
-
+I implemented an Azure Databricks Lakehouse using a Bronze–Silver–Gold architecture. Legacy ETL processes were migrated to scalable ELT pipelines with Delta Lake, SCD Type 1 modeling, and performance optimizations such as Z-Ordering and caching along with Unity Catalog provided centralized governance.
 
 ### Details
-
+Data is ingested via Azure Data Factory into ADLS and processed in Databricks using PySpark. Delta tables power high-performance analytics, fine-grained access control, and full data lineage, delivering a secure, scalable, and compliant financial analytics platform.
 
  Data Lineage             |  Pipeline
 :-------------------------:|:-------------------------:
