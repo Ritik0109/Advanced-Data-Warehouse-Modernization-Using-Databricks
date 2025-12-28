@@ -10,7 +10,10 @@ The existing SQL Server–based warehouse relied on complex SSIS workflows and m
 I implemented an Azure Databricks Lakehouse using a Bronze–Silver–Gold architecture. Legacy ETL processes were migrated to scalable ELT pipelines with Delta Lake, SCD Type 1 modeling, and performance optimizations such as Z-Ordering and caching along with Unity Catalog provided centralized governance.
 
 ### Details
-Data is ingested via Azure Data Factory into ADLS and processed in Databricks using PySpark. Delta tables power high-performance analytics, fine-grained access control, and full data lineage, delivering a secure, scalable, and compliant financial analytics platform.
+Project delivers a modern Azure Data Lakehouse architecture for end-to-end data ingestion, transformation, and analytics. Data is ingested via Azure Data Factory into Azure Data Lake Storage Gen2 and organized across Bronze, Silver, and Gold layers, with Azure Databricks and Delta Lake as the core processing and storage technologies.
+
+The implementation includes SCD Type 1 dimensional modeling using Delta Lake MERGE operations to maintain the latest state of dimension data. Performance is optimized through data partitioning and Z-ORDER clustering, improving query efficiency and data skipping. Row-Level Security (RLS) and Column-Level Security (CLS) concepts are incorporated to ensure controlled access to sensitive data based on user roles. Curated Gold datasets are optimized for secure and high-performance consumption through Power BI.
+
 
  Data Lineage             |  Pipeline
 :-------------------------:|:-------------------------:
