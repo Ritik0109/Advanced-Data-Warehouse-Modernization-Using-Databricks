@@ -26,7 +26,7 @@ The implementation includes SCD Type 1 dimensional modeling using Delta Lake MER
  Row-Level-Security             |  Column Level Masking
 :-------------------------:|:-------------------------:
 <img width="480" height="270" alt="image" src="https://github.com/user-attachments/assets/5e8cf392-cda9-4a41-854f-b84fecdb6348" />  |  <img width="480" height="270" alt="image" src="https://github.com/user-attachments/assets/bf53923e-7ae4-4785-9736-4fe49f5c514b" />
-
+RLS was implemented using a dynamic function on Branch_name such that whenever a query is run, a metadata table is queried to check the filters / access for that particular user and the output is returned as a dynamically filtered table. For Column level security, similar to RLS, it is based on level of access. Admins can view full PII whereas below that level all the data is masked as * for masking sensitive customer data.
 
 
 
